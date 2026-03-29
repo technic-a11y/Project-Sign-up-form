@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+     url('fonts/Norse-Bold.woff') format('woff');
+    font-size: normal;
+    font-weight: bold;
+}
+
+:root {
+    --accent: #596D48;
+    --border: #E5E7EB;
+    --box-shadow: rgba(0,0,0, 0.3)
+    
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(14, 14, 14);
+}
+
+
+.main {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.container {
+    position: relative;
+    width: 30%;
+    min-height: 100vh;
+    background: url('halie-west-25xggax4bSA-unsplash.jpg') no-repeat;
+    background-size: cover;
+    
+}
+
+.logo-bar {
+    position: absolute;
+    top: 22vh;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 140px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bar img {
+    height: auto;
+    width: 70px;
+}
+
+.logo-bar span {
+    font-family:'Norse-bold', sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.photo-credit a {
+    color: white;
+}
+
+.right-container {
+    width: 38%;
+    min-height: 100vh;
+    background-color: rgb(253, 252, 255);;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.right-container p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-top: 5rem;
+    text-align: left;
+    padding-right: 15rem;
+    padding-bottom: 0px;
+    font-weight: 700;
+}
+
+
+.form-head {
+    box-sizing: border-box;
+    box-shadow: 0 5px 12px var(--box-shadow);
+    padding-bottom: 12px;
+}
+
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(39, 38, 38, 0.9);
+    padding-left: 3px;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+     gap: 20px;
+     padding-left: 3px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 6px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: .95rem;
+    width: 48%;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 5px var(--accent);
+}
+
+input:user-invalid {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+
+input:user-valid {
+    border-color: green;
+    box-shadow: 0 0 5px green;
+}
+
+.bottom-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.bottom-area a {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.95rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+.bottom-area a:hover {
+    text-decoration: underline;
+}
+button {
+    width: 30%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bottom-area p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.95rem;
+    margin-top: 6px;
+}
